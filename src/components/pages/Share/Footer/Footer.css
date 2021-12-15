@@ -2,4 +2,9 @@
 background: #08192b ;
 color: #fff;
 overflow-x: hidden;
+
+}
+.social_icon:hover{
+    color: salmon;
+    
 }
