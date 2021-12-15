@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logo from '../../../../images/logo/ed-logo-grey.png'
 
 
@@ -13,9 +14,8 @@ const Navigation = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto fw-bold">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#pages">Pages</Nav.Link>
-      <Nav.Link href="#events">Events</Nav.Link>
+      <Nav.Link as={Link} to="/home">Home</Nav.Link>
+      <Nav.Link as={Link} to='/events'>Events</Nav.Link>
       <Nav.Link href="#teachers">Teachers</Nav.Link>
       <Nav.Link href="#galary">Gallery</Nav.Link>
       <Nav.Link href="#news">News</Nav.Link>

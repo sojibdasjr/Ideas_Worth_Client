@@ -7,18 +7,18 @@ import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/fre
 const Footer = () => {
     return (
         <div className='footer_div mt-5'>
-            <div className='row  m-2'>
+            <div className='row m-2 pt-5'>
                 
                 <div className='col-12 col-md-4 col-lg-3'>
                     <div>
-                        <h2>ABOUT THE SCHOOL</h2>
+                        <h5>ABOUT THE SCHOOL</h5>
                         <small>Please input an email address down below. <br /> address down blew school. Please input an email. Beloow and school</small>
                         
                     </div>
                 </div>
                 <div className='col-12 col-md-4 col-lg-3'>
                     <div>
-                        <h2>OUR LINKS</h2>
+                        <h5>OUR LINKS</h5>
                         <div>
                         <a href="#" > Classroom</a> <br />
                         <a href="#" > Events</a> <br />
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className='col-12 col-md-4 col-lg-3'>
                     <div>
-                        <h2>OUR SCHOOL</h2>
+                        <h5>OUR SCHOOL</h5>
                         <a href="#" > Open houses</a> <br />
                         <a href="#" > Enrollment</a> <br />
                         <a href="#" > Preschool</a> <br />
