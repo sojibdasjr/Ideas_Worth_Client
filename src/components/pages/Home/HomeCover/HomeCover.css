@@ -1,0 +1,16 @@
+.programs{
+    /* background-color: rgb(0, 0, 0); */
+    /* color: white; */
+    justify-content: center;
+    display: flex;
+    padding: 2rem 0;
+    margin-top: -5.7%;
+    position: relative;
+    overflow: hidden;
+}
+
+.program_item{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 5%;
+}

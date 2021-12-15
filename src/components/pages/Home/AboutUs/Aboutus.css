@@ -1,0 +1,21 @@
+.teacher_bg:hover{
+    background: rgba(128, 128, 128, 0.349);
+    border-radius: 1%;
+    overflow: hidden;
+   transition: 0.5s;
+}
+
+.working_pragraph{
+    background: rgba(128, 128, 128, 0.322);
+    padding-bottom: 20%;
+    padding-top: 10%;
+    margin-top: 5%;
+    
+}
+
+.about_us{
+    border-bottom: 2px solid black;
+    margin: 0 42%;
+    
+    
+}
