@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import { newsData } from '../../../../data/data';
 import './News.css'
 
@@ -20,7 +19,7 @@ const News = () => {
                         src={img}  sty alt="" />
                         <h3 style={{textAlign:'center', fontWeight:'700'}}>{title}</h3>
                         <h6>{des}</h6>
-                        <Button>Read More</Button>
+                        
                         
                     </div>)
                 }

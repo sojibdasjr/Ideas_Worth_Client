@@ -7,6 +7,7 @@ import VisitInfo from '../VisitInfo/VisitInfo';
 
 import './Home.css'
 import Footer from '../../Share/Footer/Footer';
+import Students from '../Students/Students';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
           <Navigation/>
           <HomeCover/>
           <News/>
+          <Students/>
           <VisitInfo/>
           <AboutUs/>
           <Footer/>
