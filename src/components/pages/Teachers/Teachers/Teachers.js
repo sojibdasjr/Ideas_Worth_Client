@@ -14,7 +14,7 @@ const Teachers = () => {
             <Navigation/>
             <div className='mt-5 pt-4 container'>
                 <h2 className='ms-5'>Our All Teachers</h2>
-                <div className='row'>
+                <div className='row mx-auto'>
                     {
                         teachers.map(teacher => <Teacher
                         key={teacher._id}

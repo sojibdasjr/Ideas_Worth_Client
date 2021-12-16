@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Teacher = ({teacher}) => {
     const {name, img, age, from, about, subject } = teacher;
     return (

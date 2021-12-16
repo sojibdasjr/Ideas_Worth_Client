@@ -20,7 +20,7 @@ const AddEvents = () => {
 
     return (
         <div className='add_events'>
-            <h5 className='text-center'>Add Teacher</h5>
+            <h5 className='text-center'>Add Events</h5>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input required placeholder='Event Name' {...register("eventName", { required: true, maxLength: 20 })} />
             <textarea required placeholder='Event Description' {...register("eventDes")} />

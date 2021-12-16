@@ -17,7 +17,7 @@ const Students = () => {
     },[])
     return (
         <Container className='my-5'>
-            <h4 className='my-5'>Students List <Link style={{textDecoration:'none'}} to ='/students'>See all <FontAwesomeIcon icon={faArrowRight}/> </Link> </h4>
+            <h4 className='my-5'>Students List <Link style={{textDecoration:'none'}} to ='/all_students'>See all <FontAwesomeIcon icon={faArrowRight}/> </Link> </h4>
             <div className='row'>
                 {
                     students.map(student => <div

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../../../images/logo/ed-logo-grey.png'
 
@@ -17,8 +17,8 @@ const Navigation = () => {
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
       <Nav.Link as={Link} to='/events'>Events</Nav.Link>
       <Nav.Link as={Link} to='/teachers'>Teachers</Nav.Link>
+      <Nav.Link as={Link} to='/all_students'>Studends</Nav.Link>
       <Nav.Link href="#galary">Gallery</Nav.Link>
-      <Nav.Link href="#news">News</Nav.Link>
       <Nav.Link href="#contact">Contact</Nav.Link>
     </Nav>
   </Navbar.Collapse>

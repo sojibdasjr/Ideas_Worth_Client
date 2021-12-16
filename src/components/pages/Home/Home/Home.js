@@ -4,10 +4,9 @@ import HomeCover from '../HomeCover/HomeCover';
 import Navigation from '../../Share/Navigation/Navigation';
 import News from '../News/News';
 import VisitInfo from '../VisitInfo/VisitInfo';
-
-import './Home.css'
 import Footer from '../../Share/Footer/Footer';
 import Students from '../Students/Students';
+import './Home.css'
 
 const Home = () => {
     return (
