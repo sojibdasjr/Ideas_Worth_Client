@@ -24,7 +24,7 @@ const AboutUs = () => {
                     <div className='d-flex mt-2 teacher_bg'>
                         <img src={teacherImg2}  alt="" />
                         <div className='ms-2'>
-                            <h5 className='text-center fw-bold'>Parker</h5>
+                            <h5 className='text-center fw-bold'>Pinky_Banik</h5>
                             <h6 className='text-center'>PEDIATRIST</h6>
                             <p>As a ED student, I can say a great environment for international students.</p>
                         </div>

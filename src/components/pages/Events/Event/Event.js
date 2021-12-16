@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
 import Navigation from '../../Share/Navigation/Navigation';
 import './Event.css'
 
@@ -13,21 +12,23 @@ const Event = () => {
     return (
         <div>
             <Navigation/>
-            <Container className='mt-5'>
-                <div className='row mt-5 pt-5'>
+            
+                <div className='row container mx-auto gx-2 mt-5 pt-5'>
                     {
                         events.map(event=><div 
                         key={event._id}
-                        className='col-12 col-md-6 col-lg-3'>
-                        <img src={event.image} width='100%' alt="" />
+                        className='col-12 col-md-6 col-lg-3 shadow-sm mx-auto my-2 p-2'
+                        style={{width:'18rem'}}
+                        >
+                        <img src={event.image} width='100%' style={{borderRadius:'5px'}} alt="" />
                         <h5>{event.eventName}</h5>
                         <p>{event.eventDes}</p>
                         </div>)
                     }
                 </div>
-            </Container>
+            </div>
             
-        </div>
+        
     );
 };
 

@@ -1,0 +1,11 @@
+.add_teacher form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_teacher form input, textarea{
+    width: 50%;
+    margin-bottom: 10px;
+}

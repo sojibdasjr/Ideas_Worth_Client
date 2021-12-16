@@ -16,7 +16,7 @@ const Navigation = () => {
     <Nav className="me-auto fw-bold">
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
       <Nav.Link as={Link} to='/events'>Events</Nav.Link>
-      <Nav.Link href="#teachers">Teachers</Nav.Link>
+      <Nav.Link as={Link} to='/teachers'>Teachers</Nav.Link>
       <Nav.Link href="#galary">Gallery</Nav.Link>
       <Nav.Link href="#news">News</Nav.Link>
       <Nav.Link href="#contact">Contact</Nav.Link>
