@@ -8,7 +8,28 @@ const AllStudents = () => {
         fetch('http://localhost:5000/students')
         .then(res=>res.json())
         .then(data=> setAllStudents(data))
-    }, [])
+    }, []);
+
+    // delete student
+
+    const handleDeleteStudent = id => {
+        const procced = window.confirm('Are you sure, you want to delete ?');
+        if(procced){
+            const url = `http://localhost:5000/students/${id}`;
+        fetch(url, {
+            method:'delete'
+        })
+        .then(res=> res.json())
+        .then(data => {
+            if(data.deletedCount > 0){
+                alert('Deleted Successfully');
+                const remainingStudent = AllStudents.filter(student => student._id !== id);
+                setAllStudents(remainingStudent);
+            }
+        })
+        }
+    }
+
     return (
         <>
             <Navigation/>
@@ -30,8 +51,11 @@ const AllStudents = () => {
                                         <small className="card-text">Class: {Class}</small> <br />
                                         <small className="card-text">Class Roll: {roll}</small> <br />
                                         <small className="card-text">Group: {group}</small>
+                                        <button onClick={()=> handleDeleteStudent(_id)} type="button" class="btn btn-danger">Danger</button>
+                                        
                                         
                                     </div>
+                                    
                                     </div>
                                 </div>
                         </div>

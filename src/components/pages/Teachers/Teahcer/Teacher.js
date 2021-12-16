@@ -1,6 +1,7 @@
 import React from 'react';
 const Teacher = ({teacher}) => {
     const {name, img, age, from, about, subject } = teacher;
+    
     return (
         <div className='col-12 col-md-6 col-lg-3 my-1'>
             <div className="card" style={{width:'18rem'}}>
@@ -12,7 +13,9 @@ const Teacher = ({teacher}) => {
                     <small>Age: {age}</small> <br />
                     <small>About Teacher: {about}</small> <br />
             </div>
-</div>
+            
+            </div>
+            
         </div>
     );
 };
