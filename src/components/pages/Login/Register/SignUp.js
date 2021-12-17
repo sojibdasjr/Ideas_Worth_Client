@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Spinner } from 'react-bootstrap';
-import { useLocation } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
@@ -8,7 +7,7 @@ import Navigation from '../../Share/Navigation/Navigation';
 
 const SignUp = () => {
     const [loginData, setLoginData] = useState({});
-    const location = useLocation();
+
     const history = useHistory();
 
     
@@ -20,6 +19,7 @@ const SignUp = () => {
         const field = e.target.name;
         const value = e.target.value;
         const newLoginData = {...loginData};
+        console.log(newLoginData);
         newLoginData[field] = value;
         setLoginData(newLoginData);
     }
@@ -29,7 +29,7 @@ const SignUp = () => {
             alert('Your password did not match');
             return
         }
-        registerUser(loginData.email, loginData.password, loginData.name, location, history);
+        registerUser(loginData.email, loginData.password, loginData.name, history);
         e.preventDefault();
     }
     return (
@@ -43,11 +43,10 @@ const SignUp = () => {
 
                 <div className="form-group">
                     <input 
-                    type="text"
-                    name="name"
+                    
+                    name='name'
                     onBlur={handleOnBlur}
                     className='form-control item' 
-                    id='name' 
                     placeholder='Name' />
                 </div>
                 

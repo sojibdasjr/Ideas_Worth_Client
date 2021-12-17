@@ -70,7 +70,7 @@ const Login = () => {
                     <h5 className='my-2'>Login With</h5>
                 </div>
 
-                <button onClick={handleGoogleLogin} className='btn btn-block login-account'>Google <FontAwesomeIcon icon={faGoogle}/> </button>
+                
                 <p className='new_accout'>Don't Have Account ? Please <Link to='/signup'>Register</Link></p>
                 {isLoading && <Spinner animation="border" variant="success" />}
             {user?.email && <div className="alert alert-success" role="alert">
@@ -82,7 +82,7 @@ const Login = () => {
               </div>
             }
             </form>
-            
+            <button onClick={handleGoogleLogin} className='btn btn-block login-account'>Google <FontAwesomeIcon icon={faGoogle}/> </button>
             
             </div>
         </div>

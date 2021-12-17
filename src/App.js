@@ -15,6 +15,8 @@ import Login from './components/pages/Login/Login/Login';
 import SignUp from './components/pages/Login/Register/SignUp';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './components/pages/PrivateRoute/PrivateRoute';
+import DashboardHome from './components/Dashboard/Dashboard/DashboardHome';
+
 
 
 
@@ -34,6 +36,7 @@ const App = () => {
         <Route  path='/add_teacher'component={AddTeacher}></Route>
         <Route  path='/add_students'component={AddStudent}></Route>
         <Route  path='/add_events' component={AddEvents}></Route>
+        <Route  path='/dashboard_home' component={DashboardHome}></Route>
         </Switch>
       </Router>
       </AuthProvider>

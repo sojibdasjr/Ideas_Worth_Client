@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import Dashboard from '../Dashboard/Dashboard';
 import './AddStudents.css'
 
 const AddStudent = () => {
@@ -20,6 +21,7 @@ const AddStudent = () => {
 
     return (
         <div className='add_students'>
+            <Dashboard/>
             
             <h5 className='text-center'>Add Studens</h5>
             <form onSubmit={handleSubmit(onSubmit)}>
