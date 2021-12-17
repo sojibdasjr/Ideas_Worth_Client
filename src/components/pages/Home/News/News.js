@@ -33,7 +33,7 @@ const News = () => {
                         }}
                         src={image}  sty alt="" />
                         <h3 style={{textAlign:'center', fontWeight:'700'}}>{eventName}</h3>
-                        <h6>{eventDes}</h6>
+                        <p>{eventDes}</p>
                         
                         
                     </div>)

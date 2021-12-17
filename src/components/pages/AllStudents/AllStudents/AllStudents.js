@@ -51,7 +51,7 @@ const AllStudents = () => {
                                         <small className="card-text">Class: {Class}</small> <br />
                                         <small className="card-text">Class Roll: {roll}</small> <br />
                                         <small className="card-text">Group: {group}</small>
-                                        <button onClick={()=> handleDeleteStudent(_id)} type="button" class="btn btn-danger">Danger</button>
+                                        <button onClick={()=> handleDeleteStudent(_id)} type="button" className="btn btn-danger">Danger</button>
                                         
                                         
                                     </div>
