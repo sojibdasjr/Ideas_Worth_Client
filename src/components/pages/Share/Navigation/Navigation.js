@@ -25,7 +25,7 @@ const Navigation = () => {
     </Nav>
     <Nav className='ms-auto fw-bold'>
     {
-      user?.email ? <Nav.Link><ButtonGroup onClick={logOut}>LogOut</ButtonGroup></Nav.Link> 
+      user?.email ? <Nav.Link><ButtonGroup onClick={logOut}> LogOut</ButtonGroup></Nav.Link> 
       :
       <Nav.Link as={Link} to='/login'><ButtonGroup>Login</ButtonGroup></Nav.Link>
     }

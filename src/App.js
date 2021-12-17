@@ -17,6 +17,7 @@ import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './components/pages/PrivateRoute/PrivateRoute';
 
 
+
 const App = () => {
   return (
     <div>
@@ -27,7 +28,7 @@ const App = () => {
         <Route  path='/home' component={Home}></Route>
         <Route  path='/events' component={Event}></Route>
         <Route  path='/teachers' component={Teachers}></Route>
-        <PrivateRoute><Route  path='/all_students' component={AllStudents}></Route></PrivateRoute>
+        <PrivateRoute path='/all_students'><AllStudents/></PrivateRoute>
         <Route  path='/login' component={Login}></Route>
         <Route  path='/signup' component={SignUp}></Route>
         <Route  path='/add_teacher'component={AddTeacher}></Route>
