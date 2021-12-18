@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonGroup, Container, Nav, Navbar } from 'react-bootstrap';
+import { ButtonGroup, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 import logo from '../../../../images/logo/ed-logo-grey.png'
@@ -7,7 +7,8 @@ import logo from '../../../../images/logo/ed-logo-grey.png'
 
 
 const Navigation = () => {
-    const {user, logOut} = useAuth();
+    const {user, logOut, admin} = useAuth();
+    
     return (
         <div >
             <Navbar fixed="top" collapseOnSelect expand="lg" bg="light" variant="light">
@@ -21,7 +22,7 @@ const Navigation = () => {
       <Nav.Link as={Link} to='/events'>Events</Nav.Link>
       <Nav.Link as={Link} to='/teachers'>Teachers</Nav.Link>
       <Nav.Link as={Link} to='/all_students'>Studends</Nav.Link>
-      <Nav.Link as={Link} to='/deshboard_home'>Dashboard</Nav.Link>
+      { admin && <Nav.Link as={Link} to='/deshboard_home'>Dashboard</Nav.Link>}
       <Nav.Link href="#galary">Gallery</Nav.Link>
       <Nav.Link href="#contact">Contact</Nav.Link>
     </Nav>

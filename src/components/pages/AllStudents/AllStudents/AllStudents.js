@@ -5,7 +5,7 @@ import Navigation from '../../Share/Navigation/Navigation';
 const AllStudents = () => {
     const [AllStudents, setAllStudents] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/students')
+        fetch('https://afternoon-sands-44312.herokuapp.com/students')
         .then(res=>res.json())
         .then(data=> setAllStudents(data))
     }, []);

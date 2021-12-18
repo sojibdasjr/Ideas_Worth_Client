@@ -17,6 +17,7 @@ const DashboardNavigation = () => {
           <Nav.Link as={Link} to="/add_students">Add Students</Nav.Link>
           <Nav.Link as={Link} to="/add_events">Add Events</Nav.Link>
           <Nav.Link as={Link} to="/add_teacher">Add Teachers</Nav.Link>
+          <Nav.Link as={Link} to="/add_admin">Make Admin</Nav.Link>
           
         </Nav>
         <Nav>

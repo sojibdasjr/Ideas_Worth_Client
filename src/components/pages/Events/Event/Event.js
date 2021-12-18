@@ -5,7 +5,7 @@ import './Event.css'
 const Event = () => {
     const [events, setEvents] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/events')
+        fetch('https://afternoon-sands-44312.herokuapp.com/events')
         .then(res=> res.json())
         .then(data => setEvents(data))
     },[]);

@@ -4,7 +4,7 @@ import { Container, Table } from 'react-bootstrap';
 const AllTeachersDashboard = () => {
     const [teachers, setTeachers] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/teachers')
+        fetch('https://afternoon-sands-44312.herokuapp.com/teachers')
         .then(res=> res.json())
         .then(data => setTeachers(data))
     }, []);
@@ -12,7 +12,7 @@ const AllTeachersDashboard = () => {
     const handleDeleteStudent = id => {
         const procced = window.confirm('Are you sure, you want to delete ?');
         if(procced){
-            const url = `http://localhost:5000/teachers/${id}`;
+            const url = `https://afternoon-sands-44312.herokuapp.com/teachers/${id}`;
         fetch(url, {
             method:'delete'
         })

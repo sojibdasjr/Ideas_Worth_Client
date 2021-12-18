@@ -5,7 +5,7 @@ import Teacher from '../Teahcer/Teacher';
 const Teachers = () => {
     const [teachers, setTeachers] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/teachers')
+        fetch('https://afternoon-sands-44312.herokuapp.com/teachers')
         .then(res=> res.json())
         .then(data => setTeachers(data))
     }, [])

@@ -10,7 +10,7 @@ const AddEvents = () => {
     const { register, handleSubmit, reset } = useForm();
   const onSubmit = data => {
     console.log(data);
-    axios.post('http://localhost:5000/events', data)
+    axios.post('https://afternoon-sands-44312.herokuapp.com/events', data)
     .then(res=> {
         if(res.data.insertedId){
             alert('Added Successfully');
@@ -22,13 +22,13 @@ const AddEvents = () => {
     return (
         <div className='add_events'>
              <DashboardNavigation/>
-            <h5 className='text-center mt-5'>Add Events</h5>
+            <h5 className='text-center mt-5 pt-5'>Add Events</h5>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input required placeholder='Event Name' {...register("eventName", { required: true, maxLength: 20 })} />
             <textarea required placeholder='Event Description' {...register("eventDes")} />
             <input required placeholder='img URL Link' {...register("image")} />
             <input  type="submit" />
-            <Link to='/events'><Button>Go Back</Button></Link>
+            <Link to='/deshboard_home'><Button>Go Back</Button></Link>
         </form>
         
         </div>
