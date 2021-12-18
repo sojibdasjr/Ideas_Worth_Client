@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import DashboardNavigation from '../Dashboard/DashboardNavigation';
 import './Addevents.css'
 
 const AddEvents = () => {
@@ -20,7 +21,8 @@ const AddEvents = () => {
 
     return (
         <div className='add_events'>
-            <h5 className='text-center'>Add Events</h5>
+             <DashboardNavigation/>
+            <h5 className='text-center mt-5'>Add Events</h5>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input required placeholder='Event Name' {...register("eventName", { required: true, maxLength: 20 })} />
             <textarea required placeholder='Event Description' {...register("eventDes")} />

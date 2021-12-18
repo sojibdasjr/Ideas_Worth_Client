@@ -3,6 +3,7 @@ import React from 'react';
 import { Button} from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import DashboardNavigation from '../Dashboard/DashboardNavigation';
 import './AddTeacher.css'
 
 const AddTeacher = () => {
@@ -22,7 +23,8 @@ const AddTeacher = () => {
 
     return (
         <div className='add_teacher'>
-            <h5 className='text-center'>Add Teacher</h5>
+            <DashboardNavigation/>
+            <h5 className='text-center mt-5'>Add Teacher</h5>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input required placeholder='Teacher Name' {...register("name", { required: true, maxLength: 20 })} />
             <input required placeholder='Tehacher Age' type="number" {...register("age", { min: 18, max: 99 })} />

@@ -20,6 +20,7 @@ import DashboardHome from './components/Dashboard/Dashboard/DashboardHome';
 
 
 
+
 const App = () => {
   return (
     <div>
@@ -36,7 +37,8 @@ const App = () => {
         <Route  path='/add_teacher'component={AddTeacher}></Route>
         <Route  path='/add_students'component={AddStudent}></Route>
         <Route  path='/add_events' component={AddEvents}></Route>
-        <Route  path='/dashboard_home' component={DashboardHome}></Route>
+        <Route  path='/deshboard_home' component={DashboardHome}></Route>
+        
         </Switch>
       </Router>
       </AuthProvider>

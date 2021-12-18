@@ -1,9 +1,7 @@
 import axios from 'axios';
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
-import Dashboard from '../Dashboard/Dashboard';
+import DashboardNavigation from '../Dashboard/DashboardNavigation';
 import './AddStudents.css'
 
 const AddStudent = () => {
@@ -21,9 +19,8 @@ const AddStudent = () => {
 
     return (
         <div className='add_students'>
-            <Dashboard/>
-            
-            <h5 className='text-center'>Add Studens</h5>
+            <DashboardNavigation/>
+            <h5 className='text-center mt-5'>Add Studens</h5>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input required placeholder='Student Name' {...register("studentName", { required: true, maxLength: 20 })} />
             <input required placeholder='Class' {...register("Class", { required: true, maxLength: 20 })} />
@@ -31,7 +28,7 @@ const AddStudent = () => {
             <input required placeholder='Group Name' {...register("group", { required: true, maxLength: 20 })} />
             <input required placeholder='img URL Link' {...register("img")} />
             <input  type="submit" />
-            <Link to='/events'><Button>Go Back</Button></Link>
+            
         </form>
         
         </div>

@@ -21,7 +21,7 @@ const Navigation = () => {
       <Nav.Link as={Link} to='/events'>Events</Nav.Link>
       <Nav.Link as={Link} to='/teachers'>Teachers</Nav.Link>
       <Nav.Link as={Link} to='/all_students'>Studends</Nav.Link>
-      <Nav.Link as={Link} to='/dashboard_home'>Dashboard</Nav.Link>
+      <Nav.Link as={Link} to='/deshboard_home'>Dashboard</Nav.Link>
       <Nav.Link href="#galary">Gallery</Nav.Link>
       <Nav.Link href="#contact">Contact</Nav.Link>
     </Nav>
